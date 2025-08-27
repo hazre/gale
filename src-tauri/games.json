@@ -1339,6 +1339,25 @@
         }
     },
     {
+        "name": "PATAPON 1+2 REPLAY",
+        "modLoader": {
+            "name": "BepInEx",
+            "subdirs": [
+                {
+                    "name": "hexpatches",
+                    "target": "BepInEx/hexpatches",
+                    "mode": "track",
+                    "mutable": true
+                }
+            ]
+        },
+        "platforms": {
+            "steam": {
+                "id": 2383200
+            }
+        }
+    },
+    {
         "name": "PEAK",
         "slug": "peak",
         "modLoader": {
@@ -1406,25 +1425,6 @@
         "platforms": {
             "steam": {
                 "id": 1628610
-            }
-        }
-    },
-    {
-        "name": "PATAPON 1+2 REPLAY",
-        "modLoader": {
-            "name": "BepInEx",
-            "subdirs": [
-                {
-                    "name": "hexpatches",
-                    "target": "BepInEx/hexpatches",
-                    "mode": "track",
-                    "mutable": true
-                }
-            ]
-        },
-        "platforms": {
-            "steam": {
-                "id": 2383200
             }
         }
     },
@@ -1538,6 +1538,18 @@
         "platforms": {
             "steam": {
                 "id": 1129310
+            }
+        }
+    },
+    {
+        "name": "Resonite",
+        "slug": "resonite",
+        "modLoader": {
+            "name": "BepInEx"
+        },
+        "platforms": {
+            "steam": {
+                "id": 2519830
             }
         }
     },
