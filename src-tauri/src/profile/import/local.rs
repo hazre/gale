@@ -88,8 +88,14 @@ pub async fn import_local_mod(
 
     match kind {
         LocalModKind::Zip => {
-            let mod_dir = install_from_zip(&path, profile, &local_mod.name, mod_loader, &prefs)
-                .context("install error")?;
+            let mod_dir = install_from_zip(
+                &path,
+                profile,
+                &local_mod.ident().full_name(),
+                mod_loader,
+                &prefs,
+            )
+            .context("install error")?;
 
             if let Some(mod_dir) = mod_dir {
                 local_mod.icon = mod_dir.join("icon.png").exists_or_none();

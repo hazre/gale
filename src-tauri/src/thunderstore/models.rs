@@ -153,7 +153,7 @@ pub struct LegacyProfileCreateResponse {
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct PackageManifest {
     pub name: String,
-    #[serde(default, skip_serializing_if = "Option::is_none")]
+    #[serde(default, skip_serializing_if = "Option::is_none", rename = "namespace")]
     pub author: Option<String>,
     pub description: String,
     pub version_number: semver::Version,

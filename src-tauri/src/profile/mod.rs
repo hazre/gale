@@ -181,7 +181,7 @@ impl ProfileModKind {
     pub fn full_name(&self) -> Cow<'_, str> {
         match self.ident() {
             Cow::Borrowed(borrow) => Cow::Borrowed(borrow.full_name()),
-            Cow::Owned(owned) => Cow::Owned(owned.name().to_owned()),
+            Cow::Owned(owned) => Cow::Owned(owned.full_name().to_owned()),
         }
     }
 
