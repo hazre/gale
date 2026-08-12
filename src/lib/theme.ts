@@ -311,7 +311,7 @@ export type Color =
 
 const root = document.querySelector(':root') as HTMLElement;
 export const colorFallbacks: Record<ColorCategory, Color> = {
-	accent: { type: 'system' },
+	accent: { type: 'default', name: 'green' },
 	primary: { type: 'default', name: 'gray' }
 };
 
